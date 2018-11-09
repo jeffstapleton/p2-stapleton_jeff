@@ -1,5 +1,6 @@
 * {
 	margin: 0;
+	padding:0;
 	font-family: 'Roboto', sans-serif; 
 }
 
@@ -19,10 +20,14 @@
   border-radius: 10px;
 }
 h1{
-  padding:20px;
-	color:#666;
+	padding:.5em;
+	border-radius:10px;
+	background:#666;
+	color:#fff;
 }
-
+.fortune {
+	display:block;
+}
 .top-triangles, .bottom-triangles {
   display:flex;
 	max-width:100%;
@@ -46,6 +51,14 @@ h1{
 	border-left: 200px solid transparent;
 	border-bottom: 20px solid #ff9f7f;
 }
+
+.one-two {
+  width:0;
+  height:0;
+  border-left: 20px solid transparent;
+  border-bottom: 200px solid #ff9f7f;
+}
+
 .two {
 	width:0;
 	height:0;
@@ -57,6 +70,12 @@ h1{
 	height:-200;
 	border-right:200px solid transparent;
   border-bottom: 20px solid #fd7e76;
+}
+.two-two {
+	width:0;
+	height:0;
+	border-right:20px solid transparent;
+  border-bottom: 200px solid #fd7e76;
 }
 
 .three {
@@ -72,8 +91,14 @@ h1{
 	border-left:200px solid transparent;
   border-top: 20px solid #fd7e76;
 }
+.three-two {
+	width:0;
+	height:0;
+	border-left:20px solid transparent;
+  border-top: 200px solid #fd7e76;
+}
 
-.four {
+.four{
 	width:0;
 	height:0;
 	border-right:200px solid transparent;
@@ -85,4 +110,10 @@ h1{
 	height:0;
 	border-right:200px solid transparent;
 	border-top: 20px solid #d05a5e;
+}
+.four-two{
+	width:0;
+	height:0;
+	border-right:20px solid transparent;
+	border-top: 200px solid #d05a5e;
 }
