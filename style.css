@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+}
+
+.container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:90vw;
+  height:90vh;
+  margin:5vh 5vw;
+  background:#f1f1f1;
+  border-radius: 10px;
+}
+h1{
+  padding:20px;
+}
+
+.top-triangles, .bottom-triangles {
+  display:flex;
+	max-width:100%;
+}
+
+.one {
+  width:0;
+  height:0;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid blue;
+}
+
+.two {
+	width:0;
+	height:0;
+	border-right:200px solid transparent;
+  border-bottom: 200px solid red;
+}
+
+.three {
+	width:0;
+	height:0;
+	border-left:200px solid transparent;
+  border-top: 200px solid yellow;
+}
+
+.four {
+	width:0;
+	height:0;
+	border-right:200px solid transparent;
+	border-top: 200px solid green;
+}
