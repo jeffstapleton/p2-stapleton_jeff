@@ -10,7 +10,7 @@
   width:90vw;
   height:90vh;
   margin:5vh 5vw;
-  background:#f1f1f1;
+  background:#999;
   border-radius: 10px;
 }
 h1{
@@ -26,26 +26,31 @@ h1{
   width:0;
   height:0;
   border-left: 200px solid transparent;
-  border-bottom: 200px solid blue;
+  border-bottom: 200px solid white;
+}
+.one:before{
+		content:"";
+		background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+		background-size:cover;
 }
 
 .two {
 	width:0;
 	height:0;
 	border-right:200px solid transparent;
-  border-bottom: 200px solid red;
+  border-bottom: 200px solid #f1f1f1;
 }
 
 .three {
 	width:0;
 	height:0;
 	border-left:200px solid transparent;
-  border-top: 200px solid yellow;
+  border-top: 200px solid #f1f1f1;
 }
 
 .four {
 	width:0;
 	height:0;
 	border-right:200px solid transparent;
-	border-top: 200px solid green;
+	border-top: 200px solid white;
 }
