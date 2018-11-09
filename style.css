@@ -28,18 +28,35 @@ h1{
 	max-width:100%;
 }
 
+.scale {
+		transition: .3s ease-out;
+}
+
 .one {
   width:0;
   height:0;
   border-left: 200px solid transparent;
   border-bottom: 200px solid #ff9f7f;
-	image-bo
+}
+
+.one-one {
+	width:0;
+	height:-200;
+	position:relative;
+	border-left: 200px solid transparent;
+	border-bottom: 20px solid #ff9f7f;
 }
 .two {
 	width:0;
 	height:0;
 	border-right:200px solid transparent;
   border-bottom: 200px solid #fd7e76;
+}
+.two-one {
+	width:0;
+	height:-200;
+	border-right:200px solid transparent;
+  border-bottom: 20px solid #fd7e76;
 }
 
 .three {
@@ -49,9 +66,23 @@ h1{
   border-top: 200px solid #fd7e76;
 }
 
+.three-one {
+	width:0;
+	height:0;
+	border-left:200px solid transparent;
+  border-top: 20px solid #fd7e76;
+}
+
 .four {
 	width:0;
 	height:0;
 	border-right:200px solid transparent;
 	border-top: 200px solid #d05a5e;
+}
+
+.four-one {
+	width:0;
+	height:0;
+	border-right:200px solid transparent;
+	border-top: 20px solid #d05a5e;
 }
