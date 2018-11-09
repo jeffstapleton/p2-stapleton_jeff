@@ -1,7 +1,12 @@
 * {
 	margin: 0;
+	font-family: 'Roboto', sans-serif; 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/*Fortune Color: ffdabb*/
 .container {
   display:flex;
   flex-direction:column;
