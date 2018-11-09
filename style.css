@@ -119,3 +119,14 @@ h1{
 	border-right:20px solid transparent;
 	border-top: 200px solid #d05a5e;
 }
+
+button{
+	display:flex;
+	padding:.5em;
+	border-radius:10px;
+	background:#666;
+	color:#fff;
+	font-size: 1em;
+	margin:auto;
+	margin-top:1em;
+}
