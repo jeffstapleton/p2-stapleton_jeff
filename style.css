@@ -44,23 +44,24 @@ h1{
 	height:200px;
 	background: #ff9f7f;
 	background-image: linear-gradient(-45deg, rgba(255,255,255,.2), rgba(255,255,255,0));
-	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
 }
 
-.one-one {
+.one-hover {
     width:200px;
 	height:200px;
 	background: #ff9f7f;
 	background-image: linear-gradient(-45deg, rgba(255,255,255,.2), rgba(255,255,255,0));
-	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
     transform:translate(-10px, -10px);
 }
 
-.one-two {
-  width:0;
-  height:0;
-  border-left: 20px solid transparent;
-  border-bottom: 200px solid #ff9f7f;
+.one-click {
+    width:200px;
+	height:200px;
+	background: #ff9f7f;
+	background-image: linear-gradient(-45deg, rgba(255,255,255,.2), rgba(255,255,255,0));
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .one p {
@@ -74,26 +75,25 @@ h1{
 	width:200px;
 	height:200px;
 	background:#fd7e76;
-	background-image: linear-gradient(90deg, rgba(0,0,20,.06), rgba(0,0,0,0));
-	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	background-image:linear-gradient(45deg, rgba(0,0,20,.1), rgba(0,0,0,0));
+	clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
 }
 
-.two-one {
+.two-hover {
 	width:200px;
 	height:200px;
 	background:#fd7e76;
 	background-image: linear-gradient(90deg, rgba(0,0,20,.06), rgba(0,0,0,0));
-	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
     transform:translate(10px, -10px);
 }
 
-.two:hover {
-    z-index:-2;
+.two-click{ 
 	width:200px;
 	height:200px;
 	background:#fd7e76;
 	background-image: linear-gradient(90deg, rgba(0,0,20,.06), rgba(0,0,0,0));
-	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .two p {
@@ -107,7 +107,7 @@ h1{
 	height:200px;
 	background:#fd7e76;
 	background-image: linear-gradient(rgba(0,0,20,.1), rgba(0,0,0,.01));
-	clip-path: polygon(100% 100%, 100% 0, 0 0 );
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
 }
 
 .three-one {
@@ -115,15 +115,16 @@ h1{
 	height:200px;
 	background:#fd7e76;
 	background-image: linear-gradient(rgba(0,0,20,.1), rgba(0,0,0,.01));
-	clip-path: polygon(100% 100%, 100% 0, 0 0 );
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
     transform:translate(-10px, 10px);
 }
 
-.three-two {
-	width:0;
-	height:0;
-	border-left:20px solid transparent;
-  border-top: 200px solid #fd7e76;
+.three-click {
+	width:200px;
+	height:200px;
+	background:#fd7e76;
+	background-image: linear-gradient(rgba(0,0,20,.1), rgba(0,0,0,.01));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .three p {
@@ -138,23 +139,24 @@ h1{
 	height:200px;
 	background:#d05a5e;
 	background-image: linear-gradient(135deg, rgba(0,0,20,.3), rgba(0,0,20,.2));
-	clip-path: polygon(100% 0, 0 0, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
 }
 
-.four:hover {
+.four-hover {
 	width:200px;
 	height:200px;
 	background:#d05a5e;
 	background-image: linear-gradient(135deg, rgba(0,0,20,.3), rgba(0,0,20,.2));
-	clip-path: polygon(100% 0, 0 0, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
     transform:translate(10px, 10px);
 }
 
-.four-two{
-	width:0;
-	height:0;
-	border-right:20px solid transparent;
-	border-top: 200px solid #d05a5e;
+.four-hover{
+	width:200px;
+	height:200px;
+	background:#d05a5e;
+	background-image: linear-gradient(135deg, rgba(0,0,20,.3), rgba(0,0,20,.2));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .four p {
