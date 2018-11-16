@@ -1,0 +1,24 @@
+{
+  "name": "p2-stapleton_jeff",
+  "version": "1.0.0",
+  "description": "Project 2 - Fortuneteller Game",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffstapleton/p2-stapleton_jeff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffstapleton/p2-stapleton_jeff/issues"
+  },
+  "homepage": "https://github.com/jeffstapleton/p2-stapleton_jeff#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
