@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding:0;
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -40,10 +40,11 @@ h1{
 }
 
 .one {
-  width:0;
-  height:0;
-  border-left: 200px solid transparent;
-  border-bottom: 200px solid #ff9f7f;
+	width:200px;
+	height:200px;
+	background: #fff;
+	background-image: linear-gradient(-45deg, rgba(255,255,255,.2), rgba(255,255,255,0));
+	clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
 .one-one {
@@ -62,16 +63,17 @@ h1{
 }
 
 .two {
-	width:0;
-	height:0;
-	border-right:200px solid transparent;
-  border-bottom: 200px solid #fd7e76;
+	width:200px;
+	height:200px;
+	background:#f9f9f9;
+	background-image: linear-gradient(90deg, rgba(0,0,20,.06), rgba(0,0,0,0));
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 .two-one {
 	width:0;
 	height:-200;
 	border-right:200px solid transparent;
-  border-bottom: 20px solid #fd7e76;
+    border-bottom: 20px solid #fd7e76;
 }
 .two-two {
 	width:0;
@@ -81,10 +83,11 @@ h1{
 }
 
 .three {
-	width:0;
-	height:0;
-	border-left:200px solid transparent;
-  border-top: 200px solid #fd7e76;
+	width:200px;
+	height:200px;
+	background:#f9f9f9;
+	background-image: linear-gradient(rgba(0,0,20,.1), rgba(0,0,0,.01));
+	clip-path: polygon(100% 100%, 100% 0, 0 0 );
 }
 
 .three-one {
@@ -101,10 +104,11 @@ h1{
 }
 
 .four{
-	width:0;
-	height:0;
-	border-right:200px solid transparent;
-	border-top: 200px solid #d05a5e;
+	width:200px;
+	height:200px;
+	background:#f9f9f9;
+	background-image: linear-gradient(135deg, rgba(0,0,20,.3), rgba(0,0,20,.2));
+	clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
 .four-one {
