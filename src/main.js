@@ -4,10 +4,9 @@ const pickOne = document.querySelector('.two');
 function wrapper() {
   
   const collapse = () => {
-    pickOne.classList.toggle('one-click');
-    pickOne.classList.toggle('two-click');
+    pickOne.classList.toggle('two-vert');
   };
-  
+
   const loopThrough = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
