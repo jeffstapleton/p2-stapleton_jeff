@@ -1,11 +1,11 @@
 const color = document.querySelectorAll('.fortune p');
-const pick = document.querySelector('.one, .two, .three, .four');
+const pickOne = document.querySelector('.two');
 
 function wrapper() {
   
   const collapse = () => {
-    pick.classList.toggle('one-click');
-    pick.classList.toggle('two-click');
+    pickOne.classList.toggle('one-click');
+    pickOne.classList.toggle('two-click');
   };
   
   const loopThrough = () => {
