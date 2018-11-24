@@ -1,10 +1,13 @@
 const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
 const stepOneEffect = document.querySelector('.fortune');
 
+const stepOneText = document.querySelectorAll('.step-one');
+const stepTwoText = document.querySelectorAll('.step-two');
+
 
 function wrapper (){ //this is bullet 1 running
   
-  const changeColor = () => {
+  const animationOne = () => {
     stepOneEffect.classList.toggle('scale-one');
   };
   
@@ -14,13 +17,16 @@ function wrapper (){ //this is bullet 1 running
     
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
-        changeColor();
+        animationOne();
     }, i * 400);
   }
 
   };
   loopThrough();
+  
 };
+
+
 
 for (let i = 0; i < colors.length; i++) {
   colors[i].addEventListener('click', wrapper); //this pulls the trigger 1
