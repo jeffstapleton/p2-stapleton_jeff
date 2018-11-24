@@ -1,26 +1,27 @@
-const color = document.querySelectorAll('.fortune p');
-const pickOne = document.querySelector('.two');
+const colors = document.querySelectorAll('#colors li'); //this sets the trigger 1
+const stepOneEffect = document.querySelectorAll('.triangles');
 
-function wrapper() {
+
+function wrapper (){ //this is bullet 1 running
   
-  const collapse = () => {
-    pickOne.classList.toggle('two-vert');
+  const changeColor = () => {
+    stepOneEffect.classList.toggle('hidden');
   };
-
+  
   const loopThrough = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
     
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
-        collapse();
-    }, i * 500);
+        changeColor();
+    }, i * 1000);
   }
 
   };
   loopThrough();
 };
 
-for(let i = 0; i < color.length; i++) {
-  color[i].addEventListener('click', wrapper);
-};
+for (let i = 0; i < colors.length; i++) {
+  colors[i].addEventListener('click', wrapper); //this pulls the trigger 1
+} 
