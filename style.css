@@ -67,6 +67,7 @@ h1{
   transform:translate(-10px, -10px);
 }
 
+/*
 .one-vert {
 	width:200px;
 	height:200px;
@@ -80,9 +81,9 @@ h1{
 	height:200px;
 	background: #ff9f7f;
 	background-image: linear-gradient(-45deg, rgba(255,255,255,.2), rgba(255,255,255,0));
-
 	clip-path: polygon(100% 80%, 0 100%, 100% 100%);
 }
+*/
 
 .one p {
   text-align:right;
@@ -113,6 +114,8 @@ h1{
   margin-left:30px;
   color:#fff;  
 }
+
+/*
 .two-vert {
 	width:200px;
 	height:200px;
@@ -128,6 +131,7 @@ h1{
 	background-image:linear-gradient(45deg, rgba(0,0,20,.1), rgba(0,0,0,0));
 	clip-path: polygon(0 90%, 100% 100%, 0 100%, 0 100%);
 }
+*/
 
 .three {
 	width:200px;
@@ -153,6 +157,7 @@ h1{
   color:white;  
 }
 
+/*
 .three-vert {
 	width:200px;
 	height:200px;
@@ -168,6 +173,7 @@ h1{
 	background-image: linear-gradient(rgba(0,0,20,.1), rgba(0,0,0,.01));
 	clip-path: polygon(0 0, 100% 0, 100% 10%, 0 0);
 }
+*/
 
 .four{
 	width:200px;
@@ -193,6 +199,7 @@ h1{
   color:#fff;  
 }
 
+/*
 .four-vert{
 	width:200px;
 	height:200px;
@@ -208,7 +215,7 @@ h1{
 	background-image: linear-gradient(135deg, rgba(0,0,20,.3), rgba(0,0,20,.2));
   clip-path: polygon(0 0,100% 0, 0 10%, 0 0);
 }
-
+*/
 
 button{
 	display:flex;
