@@ -1,15 +1,20 @@
 const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
 const stepOneEffect = document.querySelector('.fortune-one');
 
-const hideStepOne = document.querySelector('.fortune-two');
+const hideTwo = document.querySelector('.fortune-two');
 
-hideStepOne.style.display="none";
+hideTwo.style.display="none";
 
 function wrapper (){ //this is bullet 1 running
   
   const animationOne = () => {
     stepOneEffect.classList.toggle('scale-one');
   };
+  
+  const textChange = () => {
+    hideTwo.style.display="block";
+    
+  }
   
   const loopThrough = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
