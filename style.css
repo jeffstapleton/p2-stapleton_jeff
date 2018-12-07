@@ -51,9 +51,13 @@ h1{
 }
 
 .step-one{
-	visibility: visible;
+
 }
 .step-two{
+	visibility:hidden;
+}
+
+.hidden {
 	visibility:hidden;
 }
 

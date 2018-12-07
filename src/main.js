@@ -1,7 +1,7 @@
 const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
-const stepOneEffect = document.querySelector('.fortune');
+const stepOneEffect = document.querySelector('.fortune-one');
 
-const stepOneText = document.querySelectorAll('.step-one');
+const stepOneText = document.querySelectorAll('.step-one p');
 const stepTwoText = document.querySelectorAll('.step-two');
 
 
@@ -9,6 +9,9 @@ function wrapper (){ //this is bullet 1 running
   
   const animationOne = () => {
     stepOneEffect.classList.toggle('scale-one');
+  };
+  const textSwap = () => {
+    stepOneText.classList.toggle('hidden');
   };
   
   const loopThrough = () => {
@@ -22,7 +25,10 @@ function wrapper (){ //this is bullet 1 running
   }
 
   };
+
+  
   loopThrough();
+  textSwap();
   
 };
 
