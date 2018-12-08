@@ -2,6 +2,7 @@ const colors = document.querySelectorAll('.triangles p'); //this sets the trigge
 const stepOneEffect = document.querySelector('.fortune-one');
 
 const hideTwo = document.querySelector('.fortune-two');
+const hideOne = document.querySelector('.fortune-one');
 
 hideTwo.style.display="none";
 
@@ -23,12 +24,14 @@ function wrapper (){ //this is bullet 1 running
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
         animationOne();
+        textChange();
     }, i * 400);
   }
 
   };
   
   loopThrough();
+
   
 };
 
