@@ -12,11 +12,6 @@ function wrapper (){ //this is bullet 1 running
     stepOneEffect.classList.toggle('scale-one');
   };
   
-  const textChange = () => {
-    hideTwo.style.display="block";
-    
-  }
-  
   const loopThrough = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
@@ -24,13 +19,19 @@ function wrapper (){ //this is bullet 1 running
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
         animationOne();
-        textChange();
     }, i * 400);
   }
-
+  
+  };
+  
+  const textChange = () => {
+    hideTwo.style.display="block";
+    hideOne.style.display="none";
   };
   
   loopThrough();
+        textChange();
+
 
   
 };
