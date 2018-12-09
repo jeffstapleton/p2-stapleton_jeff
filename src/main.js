@@ -1,5 +1,6 @@
 const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
 const stepOneEffect = document.querySelector('.fortune-one');
+const stepTwoEffect = document.querySelector('.fortune-two');
 
 const hideTwo = document.querySelector('.fortune-two');
 const hideOne = document.querySelector('.fortune-one');
@@ -26,9 +27,8 @@ function wrapper (){ //this is bullet 1 running
         } else {
           
         }
-    }, i * 400);
-  }
-  
+      }, i * 400);
+    }
   };
   
   const textChange = () => {
@@ -37,10 +37,8 @@ function wrapper (){ //this is bullet 1 running
   };
   
   loopThrough();
-
-
-  
 };
+
 
 
 
