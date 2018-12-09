@@ -5,8 +5,6 @@ const stepTwoEffect = document.querySelector('.fortune-two');
 const hideTwo = document.querySelector('.fortune-two');
 const hideOne = document.querySelector('.fortune-one');
 
-const triggerIndexNumbers = [11, 7];
-
 hideTwo.style.display="none";
 
 function wrapper (){ //this is bullet 1 running
@@ -22,11 +20,9 @@ function wrapper (){ //this is bullet 1 running
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
         animationOne();
-        if (triggerIndexNumbers.includes(i)) {
-          textChange();
-        } else {
-          
-        }
+      }, i * 400);
+      setTimeout(function() {
+        textChange();
       }, i * 400);
     }
   };
