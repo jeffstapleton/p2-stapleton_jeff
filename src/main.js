@@ -23,7 +23,7 @@ function wrapper (){ //this is bullet 1 running
       }, i * 400);
       setTimeout(function() {
         textChange();
-      }, i * 400);
+      }, thisButtonLength * 800);
     }
   };
   
