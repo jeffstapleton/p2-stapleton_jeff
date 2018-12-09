@@ -35,9 +35,6 @@ function wrapper (){ //this is bullet 1 running
   loopThrough();
 };
 
-
-
-
 for (let i = 0; i < colors.length; i++) {
   colors[i].addEventListener('click', wrapper); //this pulls the trigger 1
 } 
