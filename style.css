@@ -50,12 +50,6 @@ h1{
 	transition: .3s ease-out;
 }
 
-.step-one{
-
-}
-.step-two{
-	visibility:hidden;
-}
 
 .hidden {
 	visibility:hidden;

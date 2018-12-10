@@ -1,5 +1,6 @@
-const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
+const colors = document.querySelectorAll('.fortune-one p'); //this sets the trigger 1
 const nums = document.querySelectorAll('.fortune-two p');
+
 const stepOneEffect = document.querySelector('.fortune-one');
 const stepTwoEffect = document.querySelector('.fortune-two');
 
@@ -21,7 +22,6 @@ function wrapper (){ //this is bullet 1 running
   const loopOne = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
-    
     for (let i = 0; i < thisButtonLength *2; i++) {
       setTimeout(function() {
         animationOne();
@@ -29,17 +29,46 @@ function wrapper (){ //this is bullet 1 running
       setTimeout(function() {
         textChange();
       }, thisButtonLength * 800);
+      
+      setTimeout(function() {
+        animationTwo();
+      }, i * 400);
     }
   };
+  
+  const loopTwo = () => {
+    let thisButtonValue = this.childNodes[0].nodeValue;
+    for (let i = 0; i < thisButtonValue *2; i++) {
+      setTimeout(function() {
+        animationOne();
+      }, i * 400);
+      setTimeout(function() {
+        textChange();
+      }, thisButtonValue * 800);
+      
+      setTimeout(function() {
+        animationTwo();
+      }, i * 400);
+    }
+  };
+  
   
   const textChange = () => {
     hideTwo.style.display="block";
     hideOne.style.display="none";
   };
   
+//  const loopTwo = () => {
+//    let nums = 
+//  }
+  
   loopOne();
+  loopTwo();
 };
 
 for (let i = 0; i < colors.length; i++) {
-  colors[i].addEventListener('click', wrapper); //this pulls the trigger 1
-} 
+  colors[i].addEventListener('click', wrapper);
+};
+for (let i = 0; i < nums.nodeValue; i++) {
+    nums[i].addEventListener('click', wrapper);
+};
