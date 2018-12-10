@@ -13,6 +13,10 @@ function wrapper (){ //this is bullet 1 running
     stepOneEffect.classList.toggle('scale-one');
   };
   
+  const animationTwo = () => {
+    stepTwoEffect.classList.toggle('scale-two');
+  };
+  
   const loopThrough = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
