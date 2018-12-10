@@ -43,6 +43,9 @@ function wrapper (){ //this is bullet 1 running
       setTimeout(function() {
         animationTwo();
       }, i * 400);
+      setTimeout(function() {
+        textChangeTwo();
+      }, thisButtonValue * 800);
     }
   };
   
