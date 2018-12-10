@@ -1,4 +1,5 @@
 const colors = document.querySelectorAll('.triangles p'); //this sets the trigger 1
+const nums = document.querySelectorAll('.fortune-two p');
 const stepOneEffect = document.querySelector('.fortune-one');
 const stepTwoEffect = document.querySelector('.fortune-two');
 
@@ -17,7 +18,7 @@ function wrapper (){ //this is bullet 1 running
     stepTwoEffect.classList.toggle('scale-two');
   };
   
-  const loopThrough = () => {
+  const loopOne = () => {
     let thisButtonText = this.childNodes[0].nodeValue;
     let thisButtonLength = thisButtonText.length;
     
@@ -36,7 +37,7 @@ function wrapper (){ //this is bullet 1 running
     hideOne.style.display="none";
   };
   
-  loopThrough();
+  loopOne();
 };
 
 for (let i = 0; i < colors.length; i++) {
