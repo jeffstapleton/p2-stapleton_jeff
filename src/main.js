@@ -29,23 +29,13 @@ function wrapper (){ //this is bullet 1 running
       setTimeout(function() {
         textChange();
       }, thisButtonLength * 800);
-      
-      setTimeout(function() {
-        animationTwo();
-      }, i * 400);
     }
   };
   
   const loopTwo = () => {
     let thisButtonValue = this.childNodes[0].nodeValue;
+    let thisButtonLength = thisButtonValue.length;
     for (let i = 0; i < thisButtonValue *2; i++) {
-      setTimeout(function() {
-        animationOne();
-      }, i * 400);
-      setTimeout(function() {
-        textChange();
-      }, thisButtonValue * 800);
-      
       setTimeout(function() {
         animationTwo();
       }, i * 400);
@@ -69,6 +59,6 @@ function wrapper (){ //this is bullet 1 running
 for (let i = 0; i < colors.length; i++) {
   colors[i].addEventListener('click', wrapper);
 };
-for (let i = 0; i < nums.nodeValue; i++) {
+for (let i = 0; i < nums.length; i++) {
     nums[i].addEventListener('click', wrapper);
 };
