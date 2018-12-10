@@ -6,10 +6,12 @@ const stepTwoEffect = document.querySelector('.fortune-two');
 
 const hideTwo = document.querySelector('.fortune-two');
 const hideOne = document.querySelector('.fortune-one');
+const hideThree = document.querySelector('.fortune-three');
 
 const startOver = document.querySelector('.button');
 
 hideTwo.style.display="none";
+hideThree.style.display="none";
 
 function wrapper (){ //this is bullet 1 running
   
@@ -47,6 +49,11 @@ function wrapper (){ //this is bullet 1 running
   const textChange = () => {
     hideTwo.style.display="block";
     hideOne.style.display="none";
+  };
+  
+  const textChangeTwo = () => {
+    hideTwo.style.display="none";
+    hideThree.style.display="block";
   };
   
   loopOne();
