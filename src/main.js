@@ -7,6 +7,8 @@ const stepTwoEffect = document.querySelector('.fortune-two');
 const hideTwo = document.querySelector('.fortune-two');
 const hideOne = document.querySelector('.fortune-one');
 
+const startOver = document.querySelector('.button');
+
 hideTwo.style.display="none";
 
 function wrapper (){ //this is bullet 1 running
@@ -51,9 +53,15 @@ function wrapper (){ //this is bullet 1 running
   loopTwo();
 };
 
+function refresh() {
+  location.reload();
+};
+
 for (let i = 0; i < colors.length; i++) {
   colors[i].addEventListener('click', wrapper);
 };
 for (let i = 0; i < nums.length; i++) {
     nums[i].addEventListener('click', wrapper);
 };
+
+startOver.addEventListener('click', refresh)
