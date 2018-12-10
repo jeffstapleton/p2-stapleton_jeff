@@ -2,7 +2,7 @@ var fortuneAPI = [{"message":"A friend's frown is better than a fool's smile.","
 
 const colors = document.querySelectorAll('.fortune-one p'); //this sets the trigger 1
 const nums = document.querySelectorAll('.fortune-two p');
-var three = document.querySelector('.fortune-three');
+const three = document.querySelector('.fortune-three');
 
 const stepOneEffect = document.querySelector('.fortune-one');
 const stepTwoEffect = document.querySelector('.fortune-two');
