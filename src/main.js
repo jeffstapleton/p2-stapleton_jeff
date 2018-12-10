@@ -42,15 +42,10 @@ function wrapper (){ //this is bullet 1 running
     }
   };
   
-  
   const textChange = () => {
     hideTwo.style.display="block";
     hideOne.style.display="none";
   };
-  
-//  const loopTwo = () => {
-//    let nums = 
-//  }
   
   loopOne();
   loopTwo();
